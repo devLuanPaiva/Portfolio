@@ -38,7 +38,7 @@ export default function Landing() {
                         containerClassName="rounded-full"
                         as="button"
                         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
-                            <Link href='/'>Acessar</Link>
+                            <Link href='/portfolio'>Acessar</Link>
                     </HoverBorderGradient>
                 </motion.div>
             </LampDemo>
