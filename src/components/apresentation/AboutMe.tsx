@@ -1,4 +1,4 @@
-import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { TextGenerateEffect } from "../ui";
 
 export default function AboutMe() {
     return (

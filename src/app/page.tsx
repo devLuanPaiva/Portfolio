@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { LampDemo } from "@/components/ui/lamp";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { HoverBorderGradient, LampDemo } from "@/components/ui";
 import Link from "next/link";
 export default function Landing() {
     return (
@@ -38,7 +37,7 @@ export default function Landing() {
                         containerClassName="rounded-full"
                         as="button"
                         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2">
-                            <Link href='/portfolio'>Acessar</Link>
+                        <Link href='/portfolio'>Acessar</Link>
                     </HoverBorderGradient>
                 </motion.div>
             </LampDemo>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import img from "../../../public/images/R01_0216-removebg.png"
-import { WobbleCard } from "../ui/wobble-card";
+import { WobbleCard } from "../ui";
 
 export default function Apresentation(props: any) {
     return (
