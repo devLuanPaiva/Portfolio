@@ -51,9 +51,9 @@ export const TextGenerateEffect = ({
     };
 
     return (
-        <div className={cn("font-bold", className)}>
+        <div className={cn("font-bold", className)} style={{ maxHeight: "400px", overflow: "auto" }}>
             <div className="mt-4">
-                <div className=" dark:text-white text-base text-justify leading-snug tracking-wide">
+                <div className="dark:text-white text-base text-justify leading-snug tracking-wide">
                     {renderWords()}
                 </div>
             </div>

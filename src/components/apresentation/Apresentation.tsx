@@ -5,7 +5,7 @@ import { WobbleCard } from "../ui/wobble-card";
 export default function Apresentation(props: any) {
     return (
 
-        <WobbleCard containerClassName="wobble-card-container" className="wobble-card-content py-0">
+        <WobbleCard containerClassName="wobble-card-container" className="wobble-card-content py-0 ">
             <header className="px-3 h-[100%] w-full flex justify-between">
                 <section className="flex flex-col justify-center">
                     <p className="text-1xl sm:text-2xl md:text-3xl lg:text-4xl tracking-wider font-bold bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
