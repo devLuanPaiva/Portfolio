@@ -44,7 +44,7 @@ export const WobbleCard = ({
                 
             }}
             className={cn(
-                "mx-auto w-full bg-indigo-800 rounded-2xl overflow-hidden",
+                "mx-auto w-[98%] bg-indigo-800 rounded-2xl overflow-hidden",
                 containerClassName
             )}
         >
