@@ -1,4 +1,4 @@
-import { Image } from "./Images.interface";
+import { Image } from "./";
 
 export interface Projects {
     id: string;
