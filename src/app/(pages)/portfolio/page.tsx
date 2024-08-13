@@ -1,6 +1,8 @@
 import AboutMe from "@/components/apresentation/AboutMe";
 import Apresentation from "@/components/apresentation/Apresentation";
+import Experiencie from "@/components/experience/Experience";
 import Projects from "@/components/projects/projects";
+import Services from "@/components/services/Services";
 
 export default function Portfolio(props: any) {
     return (
@@ -8,6 +10,8 @@ export default function Portfolio(props: any) {
             <Apresentation />
             <AboutMe />
             <Projects />
+            <Services/>
+            <Experiencie/>
         </div>
     )
 }
