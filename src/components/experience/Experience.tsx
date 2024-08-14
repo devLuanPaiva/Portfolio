@@ -1,10 +1,11 @@
 import svg from "@/data/constants/Svg.constants";
 import TitleSection from "../shared/TitleSection";
 import Image from "next/image";
+import Sections from "../shared/Sections";
 
 export default function Experiencie() {
     return (
-        <section className="mt-6 w-[90%] gap-2">
+        <Sections class="mt-6 gap-2">
             <TitleSection>Experiências</TitleSection>
             <div className="w-full flex justify-around gap-2 flex-wrap items-center">
                 {svg.map((svg) => (
@@ -14,6 +15,6 @@ export default function Experiencie() {
                     </figure>
                 ))}
             </div>
-        </section>
+        </Sections>
     )
 }

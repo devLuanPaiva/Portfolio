@@ -6,7 +6,7 @@ import TitleSection from "../shared/TitleSection";
 export default function Projects() {
     const mappedProjects = projects.map(project => ({
         title: project.title,
-        link: '/', 
+        link: `project/?id=${project.id}`, 
         thumbnail: project.images[0]?.src || '' 
     }));
 

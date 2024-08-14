@@ -1,3 +1,4 @@
+import Sections from "../shared/Sections";
 import TitleSection from "../shared/TitleSection";
 
 export default function Services() {
@@ -20,7 +21,7 @@ export default function Services() {
     ];
 
     return (
-        <section className="mt-6 w-[90%] gap-2 mx-auto">
+        <Sections class="mt-6 gap-2 mx-auto">
             <TitleSection>Serviços</TitleSection>
             <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
                 {services.map((service) => (
@@ -38,6 +39,6 @@ export default function Services() {
                     </article>
                 ))}
             </div>
-        </section>
+        </Sections>
     );
 }
