@@ -16,7 +16,8 @@ const projects: Projects[] = [
       {
         id: "1",
         src: "https://i.ibb.co/9wnM4y1/barbearia01.png",
-        description: "Nessa tela é apredentado quais são os serviços disponíveis, os barbeiros e os relatos dos clientes.",
+        description:
+          "Nessa tela é apredentado quais são os serviços disponíveis, os barbeiros e os relatos dos clientes.",
         title: "Landing",
       },
       {
@@ -41,14 +42,14 @@ const projects: Projects[] = [
         title: "Horários",
       },
       {
-        id: "4",
+        id: "5",
         src: "https://i.ibb.co/FHD0sgZ/barbearia08.png",
         description:
           "Após finalizar o agendamento, o usuário vem para essa tela de sucesso.",
         title: "Horários",
       },
       {
-        id: "4",
+        id: "6",
         src: "https://i.ibb.co/x8jhRsg/barbearia09.png",
         description:
           "Somente no perfil do barbeiro, fica disponibilizado essa tela. A mesma mostra quais agendamentos para o barbeiro logado estão marcados para o dia selecionado.",
@@ -71,7 +72,8 @@ const projects: Projects[] = [
       {
         id: "1",
         src: "https://i.ibb.co/DCTpn0J/ECommerce01.png",
-        description: "Cada card possui a imagem, o título, o valor e a descição do produto e permite que o usuário o adicione no carrinho.",
+        description:
+          "Cada card possui a imagem, o título, o valor e a descição do produto e permite que o usuário o adicione no carrinho.",
         title: "Listagem de produtos",
       },
       {
@@ -88,7 +90,6 @@ const projects: Projects[] = [
           "Com o carrinho preenchido, é exibido a listar produtos. No rodapé, é exibido o valor total somando a quantidade de cada produto multiplicado pelos seus valores.",
         title: "Carrinho",
       },
-      
     ],
   },
   {
@@ -200,7 +201,8 @@ const projects: Projects[] = [
       {
         id: "1",
         src: "https://i.ibb.co/hm8n4HN/crud01.png",
-        description: "A listagem aqui permite que cada card exiba o nome do produto e as opções de editar e excluir o mesmo. Acima da lista, é disponibilizado a opção de cadastrar um novo produto.",
+        description:
+          "A listagem aqui permite que cada card exiba o nome do produto e as opções de editar e excluir o mesmo. Acima da lista, é disponibilizado a opção de cadastrar um novo produto.",
         title: "Listar Produtos",
       },
       {
@@ -216,38 +218,43 @@ const projects: Projects[] = [
     title: "Evento Científico",
     description:
       "Este projeto teve a proposta de servir para um evento científico, onde os usuários poderiam realizar suas inscrições e submeter artigos, além de visualizar quantas inscrições e submissões de artigos foram realizadas.",
-    responsibility: "Desenvolvi todo o sistema.",
+    responsibility:
+      "Desenvolvi o projeto em uma semana com base nos requitos levantados. Foi uma tarefa diferente pois o prazo era curto, tinha que seguir as regras e era a primeira vez que desenvolvia em NextJS. No mais, imaginei como seriam as telas e assim fui desenvolvendo.",
     tools: "Utilizei Next.js, LocalStorage, SweetAlert, React Icons e Sass.",
     results: "Consegui entregar um sistema simples para um evento científico.",
     images: [
       {
         id: "1",
         src: "https://i.ibb.co/qpR8gxK/evento01.png",
-        description: "Uma chamada para o evento, possibilitando realizar a inscrição ou a submissão de um artigo. Uma funcionalidade legal, é que em todo o sistema, existe o modo claro e o noturno, sendo trocado automaticamente após determinada hora.",
+        description:
+          "Uma chamada para o evento, possibilitando realizar a inscrição ou a submissão de um artigo. Uma funcionalidade legal, é que em todo o sistema, existe o modo claro e o noturno, sendo trocado automaticamente após determinada hora.",
         title: "Landing",
       },
       {
         id: "2",
         src: "https://i.ibb.co/5R1d025/evento02.png",
-        description: "No cabeçalho do formulário é exibido as regras de negócio para a inscrição, para evitar futuros erros de cadastro.",
+        description:
+          "No cabeçalho do formulário é exibido as regras de negócio para a inscrição, para evitar futuros erros de cadastro.",
         title: "Inscrição",
       },
       {
         id: "3",
         src: "https://i.ibb.co/GFqZ8dK/evento03.png",
-        description: "Aqui o usuário pode carregar seu artigo no formato PDF, e pode submetê-lo. ",
+        description:
+          "Aqui o usuário pode carregar seu artigo no formato PDF, e pode submetê-lo. ",
         title: "Submeter Artigo",
       },
       {
         id: "4",
         src: "https://i.ibb.co/pv8GRXz/evento04.png",
-        description: "Tanto a inscrição como a submissão do artigo são salvos no localStorage e a quantidade é exibida nessa tela para que os usuários possam ter noção de quantas pessoas vão participar do evento.",
+        description:
+          "Tanto a inscrição como a submissão do artigo são salvos no localStorage e a quantidade é exibida nessa tela para que os usuários possam ter noção de quantas pessoas vão participar do evento.",
         title: "Painel",
       },
     ],
   },
   {
-    id: "",
+    id: "7",
     title: "Coffee Recipes",
     description:
       "Este projeto consiste em um sistema para receitas de café com controle de cafeína. Foi elaborado como o projeto final da disciplina de Análise e Projeto de Sistemas Orientados a Objetos, do curso de Tecnologia da Informação da UFERSA, campus Pau dos Ferros.",
@@ -273,24 +280,26 @@ const projects: Projects[] = [
       {
         id: "3",
         src: "https://i.ibb.co/5h3md9h/cafeteria03.png",
-        description: "Listagem de todas as receitas cadastradas pelos usuários, onde cada card é exibido o título, uma breve descrição e a possibilidade de visualizar mais detalhes.",
+        description:
+          "Listagem de todas as receitas cadastradas pelos usuários, onde cada card é exibido o título, uma breve descrição e a possibilidade de visualizar mais detalhes.",
         title: "Feed",
       },
       {
         id: "4",
         src: "https://i.ibb.co/sJW2Xjw/cafeteria04.png",
-        description: "O usuáro deve informar o título, a descrição, a intencidade de cafeína, os ingredientes e o modo de preparo.",
+        description:
+          "O usuáro deve informar o título, a descrição, a intencidade de cafeína, os ingredientes e o modo de preparo.",
         title: "Cadastrar Receita",
       },
       {
-        id: "4",
-        src: "https://i.ibb.co/sJW2Xjw/cafeteria04.png",
-        description: "Listagem de todas as receitas cadastradas pelo usuário logado, onde cada card é exibido o título, uma breve descrição e a possibilidade de visualizar mais detalhes.",
+        id: "5",
+        src: "https://i.ibb.co/bBXWLC2/cafeteria05.png",
+        description:
+          "Listagem de todas as receitas cadastradas pelo usuário logado, onde cada card é exibido o título, uma breve descrição e a possibilidade de visualizar mais detalhes.",
         title: "Perfil do Usuário",
       },
     ],
   },
-  
 ];
 
 export default projects;
