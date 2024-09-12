@@ -22,14 +22,14 @@ export default function Footer() {
 
     return (
         <footer
-            className="relative min-w-full -mb-3 p-4 -mx-3 flex flex-col bg-indigo-900 rounded-t-xl z-10"
+            className="w-full -mb-3 p-4 -mx-3 flex flex-col bg-indigo-900 rounded-t-xl z-10"
             style={{
                 backgroundImage: "radial-gradient(88% 100% at top, rgba(34, 34, 34, 0.5), rgba(0, 0, 0, 0))",
                 boxShadow: "0 10px 32px rgba(0, 0, 0, 0.5), 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.4), 0 24px 108px rgba(0, 0, 0, 0.6)",
             }}
         >
             <TitleSection>Contatos</TitleSection>
-            <section className="flex mt-2 w-full gap-4 justify-around">
+            <section className="flex mt-2 w-full gap-4 justify-around max-sm:flex-col">
                 <ul className="flex flex-col gap-1">
                     <li>
                         <Link
@@ -64,7 +64,7 @@ export default function Footer() {
                         </Link>
                     </li>
                 </ul>
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-1/2">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-1/2 max-sm:w-full">
                     <div className={`relative transition-all duration-300`}>
                         <input
                             type="text"
@@ -102,7 +102,7 @@ export default function Footer() {
                             Mensagem
                         </label>
                     </div>
-                    <button type="submit" className="self-start bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700">
+                    <button type="submit" className="self-start bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700 max-sm:w-full">
                         Enviar
                     </button>
                 </form>
