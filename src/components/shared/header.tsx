@@ -14,7 +14,7 @@ export default function Header({ title }: Readonly<HeaderProps>) {
             }}>
             <Link href={'portfolio'}><IconChevronLeft
                 size={50} /></Link>
-            <h1 className="w-full text-center mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wider font-bold bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">{title}</h1>
+            <h1 className="w-full text-center mb-2 mr-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wider font-bold bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">{title}</h1>
         </header>
     )
 }
