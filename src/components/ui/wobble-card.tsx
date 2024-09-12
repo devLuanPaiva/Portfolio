@@ -37,7 +37,7 @@ export const WobbleCard = ({
                     : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
                 transition: "transform 0.1s ease-out",
                 zIndex: 10,
-                minHeight: "300px",
+                minHeight: "200px",
                 maxWidth: "100%",
                 overflow: "hidden",
                 position: 'relative',
