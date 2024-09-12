@@ -25,35 +25,35 @@ const projects: Projects[] = [
         src: "https://i.ibb.co/pd0VPxS/barbearia05.png",
         description:
           "O usuário deve selecionar um barbeiro para cortar seu cabelo.",
-        title: "Barbeiro",
+        title: "Escolher Barbeiro",
       },
       {
         id: "3",
         src: "https://i.ibb.co/cQtWpBT/barbearia06.png",
         description:
           "O usuário deve selecionar os serviços. A cada serviço selecionado, o valor no sumário ao lado é alterado.",
-        title: "Serviços",
+        title: "Escolher Serviços",
       },
       {
         id: "4",
         src: "https://i.ibb.co/rQy5LqH/barbearia07.png",
         description:
           "Com base no tempo de duração dos serviços, o usuário deve selecionar uma quantidade X de horários, sendo que cada um leva 15 minutos. Além disso, os horários já reservados ficam indisponíveis.",
-        title: "Horários",
+        title: "Escolher Horário",
       },
       {
         id: "5",
         src: "https://i.ibb.co/FHD0sgZ/barbearia08.png",
         description:
-          "Após finalizar o agendamento, o usuário vem para essa tela de sucesso.",
-        title: "Horários",
+        "Após finalizar o agendamento, o usuário vem para essa tela de sucesso.",
+        title: "Sucesso",
       },
       {
         id: "6",
         src: "https://i.ibb.co/x8jhRsg/barbearia09.png",
         description:
           "Somente no perfil do barbeiro, fica disponibilizado essa tela. A mesma mostra quais agendamentos para o barbeiro logado estão marcados para o dia selecionado.",
-        title: "Horários",
+        title: "Agenda de Horários",
       },
     ],
   },
@@ -74,21 +74,21 @@ const projects: Projects[] = [
         src: "https://i.ibb.co/DCTpn0J/ECommerce01.png",
         description:
           "Cada card possui a imagem, o título, o valor e a descição do produto e permite que o usuário o adicione no carrinho.",
-        title: "Listagem de produtos",
+        title: "Listagem de Produtos",
       },
       {
         id: "2",
         src: "https://i.ibb.co/dJk5SJb/ECommerce02.png",
         description:
           "Se o carrinho estiver vazio, é exibido essa mensagem junto com a opção de ir para listar produtos.",
-        title: "Carrinho",
+        title: "Carrinho Vazio",
       },
       {
         id: "3",
         src: "https://i.ibb.co/yQPXJQs/ECommerce03.png",
         description:
           "Com o carrinho preenchido, é exibido a listar produtos. No rodapé, é exibido o valor total somando a quantidade de cada produto multiplicado pelos seus valores.",
-        title: "Carrinho",
+        title: "Carrinho Preenchido",
       },
     ],
   },
