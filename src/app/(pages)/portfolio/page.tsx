@@ -7,7 +7,7 @@ import Services from "@/components/services/Services";
 
 export default function Portfolio(props: any) {
     return (
-        <div className="relative min-h-screen w-full flex flex-col justify-between gap-3 items-center py-3">
+        <div className="relative min-h-screen max-w-full flex flex-col justify-between gap-3 items-center py-3">
             <Apresentation />
             <AboutMe />
             <Projects />
