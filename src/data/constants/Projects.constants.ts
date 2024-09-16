@@ -25,35 +25,35 @@ const projects: Projects[] = [
         src: "https://i.ibb.co/pd0VPxS/barbearia05.png",
         description:
           "O usuário deve selecionar um barbeiro para cortar seu cabelo.",
-        title: "Barbeiro",
+        title: "Escolher Barbeiro",
       },
       {
         id: "3",
         src: "https://i.ibb.co/cQtWpBT/barbearia06.png",
         description:
           "O usuário deve selecionar os serviços. A cada serviço selecionado, o valor no sumário ao lado é alterado.",
-        title: "Serviços",
+        title: "Escolher Serviços",
       },
       {
         id: "4",
         src: "https://i.ibb.co/rQy5LqH/barbearia07.png",
         description:
           "Com base no tempo de duração dos serviços, o usuário deve selecionar uma quantidade X de horários, sendo que cada um leva 15 minutos. Além disso, os horários já reservados ficam indisponíveis.",
-        title: "Horários",
+        title: "Escolher Horário",
       },
       {
         id: "5",
         src: "https://i.ibb.co/FHD0sgZ/barbearia08.png",
         description:
-          "Após finalizar o agendamento, o usuário vem para essa tela de sucesso.",
-        title: "Horários",
+        "Após finalizar o agendamento, o usuário vem para essa tela de sucesso.",
+        title: "Sucesso",
       },
       {
         id: "6",
         src: "https://i.ibb.co/x8jhRsg/barbearia09.png",
         description:
           "Somente no perfil do barbeiro, fica disponibilizado essa tela. A mesma mostra quais agendamentos para o barbeiro logado estão marcados para o dia selecionado.",
-        title: "Horários",
+        title: "Agenda de Horários",
       },
     ],
   },
@@ -74,21 +74,21 @@ const projects: Projects[] = [
         src: "https://i.ibb.co/DCTpn0J/ECommerce01.png",
         description:
           "Cada card possui a imagem, o título, o valor e a descição do produto e permite que o usuário o adicione no carrinho.",
-        title: "Listagem de produtos",
+        title: "Listagem de Produtos",
       },
       {
         id: "2",
         src: "https://i.ibb.co/dJk5SJb/ECommerce02.png",
         description:
           "Se o carrinho estiver vazio, é exibido essa mensagem junto com a opção de ir para listar produtos.",
-        title: "Carrinho",
+        title: "Carrinho Vazio",
       },
       {
         id: "3",
         src: "https://i.ibb.co/yQPXJQs/ECommerce03.png",
         description:
           "Com o carrinho preenchido, é exibido a listar produtos. No rodapé, é exibido o valor total somando a quantidade de cada produto multiplicado pelos seus valores.",
-        title: "Carrinho",
+        title: "Carrinho Preenchido",
       },
     ],
   },
@@ -186,120 +186,7 @@ const projects: Projects[] = [
         title: "Turmas do Semestre",
       },
     ],
-  },
-  {
-    id: "5",
-    title: "Product Story",
-    description:
-      "Product Story é um projeto desenvolvido seguindo o canal Code Dimension no YouTube. O projeto foca em dominar Angular 17 implementando um aplicativo básico de CRUD para gerenciar produtos.",
-    responsibility:
-      "Segui todos os passos ensinados durante a playlist de vídeos e, durante o processo, acrescentei alguns detalhes que achava necessários para manter um código limpo.",
-    tools: "Utilizei Angular 17, GitFlow, TypeScript, Angular Material e SASS.",
-    results:
-      "Consegui aprender muito sobre Angular, GitFlow, TypeScript e Angular Material.",
-    images: [
-      {
-        id: "1",
-        src: "https://i.ibb.co/hm8n4HN/crud01.png",
-        description:
-          "A listagem aqui permite que cada card exiba o nome do produto e as opções de editar e excluir o mesmo. Acima da lista, é disponibilizado a opção de cadastrar um novo produto.",
-        title: "Listar Produtos",
-      },
-      {
-        id: "2",
-        src: "https://i.ibb.co/pxQX2gp/crud02.png",
-        description: "",
-        title: "Cadastrar Produto",
-      },
-    ],
-  },
-  {
-    id: "6",
-    title: "Evento Científico",
-    description:
-      "Este projeto teve a proposta de servir para um evento científico, onde os usuários poderiam realizar suas inscrições e submeter artigos, além de visualizar quantas inscrições e submissões de artigos foram realizadas.",
-    responsibility:
-      "Desenvolvi o projeto em uma semana com base nos requitos levantados. Foi uma tarefa diferente pois o prazo era curto, tinha que seguir as regras e era a primeira vez que desenvolvia em NextJS. No mais, imaginei como seriam as telas e assim fui desenvolvendo.",
-    tools: "Utilizei Next.js, LocalStorage, SweetAlert, React Icons e Sass.",
-    results: "Consegui entregar um sistema simples para um evento científico.",
-    images: [
-      {
-        id: "1",
-        src: "https://i.ibb.co/qpR8gxK/evento01.png",
-        description:
-          "Uma chamada para o evento, possibilitando realizar a inscrição ou a submissão de um artigo. Uma funcionalidade legal, é que em todo o sistema, existe o modo claro e o noturno, sendo trocado automaticamente após determinada hora.",
-        title: "Landing",
-      },
-      {
-        id: "2",
-        src: "https://i.ibb.co/5R1d025/evento02.png",
-        description:
-          "No cabeçalho do formulário é exibido as regras de negócio para a inscrição, para evitar futuros erros de cadastro.",
-        title: "Inscrição",
-      },
-      {
-        id: "3",
-        src: "https://i.ibb.co/GFqZ8dK/evento03.png",
-        description:
-          "Aqui o usuário pode carregar seu artigo no formato PDF, e pode submetê-lo. ",
-        title: "Submeter Artigo",
-      },
-      {
-        id: "4",
-        src: "https://i.ibb.co/pv8GRXz/evento04.png",
-        description:
-          "Tanto a inscrição como a submissão do artigo são salvos no localStorage e a quantidade é exibida nessa tela para que os usuários possam ter noção de quantas pessoas vão participar do evento.",
-        title: "Painel",
-      },
-    ],
-  },
-  {
-    id: "7",
-    title: "Coffee Recipes",
-    description:
-      "Este projeto consiste em um sistema para receitas de café com controle de cafeína. Foi elaborado como o projeto final da disciplina de Análise e Projeto de Sistemas Orientados a Objetos, do curso de Tecnologia da Informação da UFERSA, campus Pau dos Ferros.",
-    responsibility:
-      "Fui responsável por levantar os requisitos, desenvolver os diagramas de caso de uso, de classes e de sequência. Após isso, desenvolvi os protótipos de interfaces e todo o sistema front-end.",
-    tools:
-      "Utilizei UML, Figma, React.js, SweetAlert, React Icons, Axios, React Router DOM e Sass.",
-    results:
-      "Consegui entregar um sistema de gerenciamento de receitas de café com controle de cafeína, onde os usuários poderiam adicionar suas receitas e reagir às dos outros, como em uma rede social.",
-    images: [
-      {
-        id: "1",
-        src: "https://i.ibb.co/kQmxHjM/cafeteria01.png",
-        description: "",
-        title: "Autenticação",
-      },
-      {
-        id: "2",
-        src: "https://i.ibb.co/4fRNYtn/cafeteria02.png",
-        description: "",
-        title: "Registro de Usuário",
-      },
-      {
-        id: "3",
-        src: "https://i.ibb.co/5h3md9h/cafeteria03.png",
-        description:
-          "Listagem de todas as receitas cadastradas pelos usuários, onde cada card é exibido o título, uma breve descrição e a possibilidade de visualizar mais detalhes.",
-        title: "Feed",
-      },
-      {
-        id: "4",
-        src: "https://i.ibb.co/sJW2Xjw/cafeteria04.png",
-        description:
-          "O usuáro deve informar o título, a descrição, a intencidade de cafeína, os ingredientes e o modo de preparo.",
-        title: "Cadastrar Receita",
-      },
-      {
-        id: "5",
-        src: "https://i.ibb.co/bBXWLC2/cafeteria05.png",
-        description:
-          "Listagem de todas as receitas cadastradas pelo usuário logado, onde cada card é exibido o título, uma breve descrição e a possibilidade de visualizar mais detalhes.",
-        title: "Perfil do Usuário",
-      },
-    ],
-  },
+  }
 ];
 
 export default projects;

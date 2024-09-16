@@ -5,7 +5,7 @@ import { HoverBorderGradient, LampDemo } from "@/components/ui";
 import Link from "next/link";
 export default function Landing() {
     return (
-        <main className="w-full mx-auto rounded-md h-screen">
+        <main className="w-screen mx-auto rounded-md h-screen">
             <LampDemo>
                 <motion.h1
                     initial={{ opacity: 0.5, y: 100 }}
