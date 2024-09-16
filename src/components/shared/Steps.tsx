@@ -31,9 +31,9 @@ export default function Steps(props: Readonly<StepsProps>) {
     }
 
     return (
-        <section className="flex flex-col gap-10 items-center lg:items-stretch">
+        <section >
             {renderStep()}
-            <section>{props.children?.[currentStep] ?? props.children}</section>
+            <section className="mt-5">{props.children?.[currentStep] ?? props.children}</section>
         </section>
     )
 }
