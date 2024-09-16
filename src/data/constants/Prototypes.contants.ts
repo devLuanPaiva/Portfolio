@@ -128,16 +128,89 @@ const projectsPrototypes: Projects[] = [
       {
         id: "9",
         src: "https://i.ibb.co/Ltnt7gQ/Localiza-o-atual-Comerciante.png",
-        description: "Com base no endereço fornecido no cadastro, a idéia é ter essa tela para que a localização seja disponibilizada para os cliente, afim de que eles possam encontrar o estabelecimento.",
+        description:
+          "Com base no endereço fornecido no cadastro, a idéia é ter essa tela para que a localização seja disponibilizada para os cliente, afim de que eles possam encontrar o estabelecimento.",
         title: "Localização do Estabelecimento",
       },
       {
         id: "10",
         src: "https://i.ibb.co/gTnwrJ0/Localiza-o-editar-Comerciante.png",
-        description: "Caso queira, o usuário pode alterar a localização do estabelecimento fornecendo outro endereço.",
+        description:
+          "Caso queira, o usuário pode alterar a localização do estabelecimento fornecendo outro endereço.",
         title: "Editar Localização do Estabelecimento",
-      }
+      },
     ],
   },
+  {
+    id: "3",
+    title: "Gerenciador de Horários",
+    description:
+      "O Gerenciador de Horários foi desenvolvido como parte do meu Trabalho de Conclusão de Curso (TCC) para auxiliar a coordenação do curso de Bacharelado em Tecnologia da Informação (BTI) do Campus Multidisciplinar de Pau dos Ferros (CMPF) da UFERSA. O sistema foi projetado para facilitar o gerenciamento de horários de turmas, evitando conflitos como turmas do mesmo semestre no mesmo horário ou professores alocados para dois lugares ao mesmo tempo.",
+    responsibility:
+      "Fui responsável pela concepção, design e desenvolvimento do sistema, desde a prototipação no Figma até a implementação e teste. O objetivo principal foi criar uma ferramenta simples e funcional, seguindo o padrão visual da UFERSA, que atendesse às necessidades da coordenação e eliminasse problemas recorrentes de conflitos de horários.",
+    tools:
+      "Figma para a prototipação, JavaScript, Django Rest Framework, PostgreSQL, React.js, e outros frameworks e bibliotecas para o desenvolvimento do sistema. Utilizou-se a identidade visual da UFERSA, com foco em usabilidade e simplicidade.",
+    results:
+      "O TCC foi aprovado com sucesso e o software foi registrado. A próxima etapa será buscar a implementação do sistema na UFERSA para que a coordenação do curso possa utilizá-lo em seu dia a dia, auxiliando na organização dos horários e na prevenção de conflitos de aulas.",
+    images: [
+      {
+        id: "1",
+        src: "https://i.ibb.co/9crL4RB/landing-Page.png",
+        description:
+          "Página inicial do sistema, com uma visão geral das funcionalidades e um design simples, alinhado à identidade visual da UFERSA.",
+        title: "Landing Page",
+      },
+      {
+        id: "2",
+        src: "https://i.ibb.co/HNJxWbt/LOGIN.png",
+        description:
+          "Tela de login, onde os coordenadores e administradores podem acessar o sistema de gerenciamento de horários.",
+        title: "Login",
+      },
+      {
+        id: "3",
+        src: "https://i.ibb.co/Rp6jqXn/turmas-com-comflito.png",
+        description:
+          "Listagem das turmas com conflitos de horário detectados pelo sistema, facilitando a visualização e correção dos problemas.",
+        title: "Listagem de Turmas com Conflitos",
+      },
+      {
+        id: "4",
+        src: "https://i.ibb.co/2Z66K8V/EDITAR-TURMA.png",
+        description:
+          "Tela de edição de turmas, onde a coordenação pode ajustar detalhes como horários, professores e locais das aulas.",
+        title: "Editar Turma",
+      },
+      {
+        id: "5",
+        src: "https://i.ibb.co/Ykyky0j/LISTAR-PROFESSOR.png",
+        description:
+          "Tela para listar os professores cadastrados no sistema, facilitando o gerenciamento de suas atribuições nas turmas.",
+        title: "Listar Professores",
+      },
+      {
+        id: "6",
+        src: "https://i.ibb.co/Kqh4sZq/SEME.png",
+        description:
+          "Tela que permite listar as turmas por semestre, oferecendo uma visão organizada das aulas ministradas em cada período.",
+        title: "Listar Turmas por Semestre",
+      },
+      {
+        id: "7",
+        src: "https://i.ibb.co/F81FKcC/prototipo-Gerenciador05.png",
+        description:
+          "Tela de cadastro de componentes curriculares, onde a coordenação pode inserir novas disciplinas e cursos no sistema.",
+        title: "Cadastrar Componente Curricular",
+      },
+      {
+        id: "8",
+        src: "https://i.ibb.co/b1BBmSx/prototipo-Gerenciador07.png",
+        description:
+          "Visão detalhada dos dados de um componente curricular, incluindo informações como código, nome e carga horária.",
+        title: "Dados de um Componente Curricular",
+      },
+    ],
+  },
+
 ];
 export default projectsPrototypes;
