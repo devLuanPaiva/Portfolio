@@ -1,22 +1,27 @@
 import { useSearchParams } from "next/navigation";
 import { useQuery } from "react-query";
 import { Projects } from "../interfaces";
-import projects from "../constants/Projects.constants";
+import { projectsPrototypes, projects } from "../constants";
 
 function useProject() {
     const searchParams = useSearchParams();
-    const search = searchParams.get('id');
+    const searchId = searchParams.get('id');
+    const searchType = searchParams.get('type');
 
     const fetchProject = async (id: string | null) => {
         if (!id) return undefined;
-        return projects.find(project => project.id === id);
+        if(searchType === 'web'){
+            return projects.find(project => project.id === id);
+        }else if(searchType === 'prototype'){
+            return projectsPrototypes.find(project => project.id === id);
+        }
     };
-
+    
     const { data: project, isLoading, error } = useQuery<Projects | undefined>(
-        ['project', search],
-        () => fetchProject(search),
+        ['project', searchId],
+        () => fetchProject(searchId),
         {
-            enabled: !!search, 
+            enabled: !!searchId, 
         }
     );
 
