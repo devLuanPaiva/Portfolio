@@ -29,8 +29,18 @@ export default function Projects() {
                     "Protótipos"
                 ]}
             >
-                <HeroParallax products={mappedProjectsWeb} />
-                <HeroParallax products={mappedProjectPrototypes} />
+                <HeroParallax
+                    products={mappedProjectsWeb}
+                    titleHero="Front-end"
+                    subtitle="Explore meus projetos de front-end clicando em um dos cards. Eles destacam minhas habilidades com React, Next.js, Angular, TypeScript e outras tecnologias modernas."
+                />
+
+                <HeroParallax
+                    products={mappedProjectPrototypes}
+                    titleHero="UX/UI"
+                    subtitle="Confira meus projetos de protótipos de interface clicando em um dos cards, onde demonstro minha experiência com Figma e design de interfaces."
+                />
+
 
             </Steps>
 
