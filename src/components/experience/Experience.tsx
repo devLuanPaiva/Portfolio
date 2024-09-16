@@ -1,7 +1,7 @@
-import svg from "@/data/constants/Svg.constants";
 import TitleSection from "../shared/TitleSection";
 import Image from "next/image";
 import Sections from "../shared/Sections";
+import { svg } from "@/data/constants";
 
 export default function Experiencie() {
     return (

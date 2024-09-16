@@ -9,20 +9,14 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { HeroParallaxProps } from "@/data/interfaces";
 
-export const HeroParallax = ({
-    products,
-}: {
-    products: {
-        title: string;
-        link: string;
-        thumbnail: string;
-    }[];
-}) => {
+export const HeroParallax = (props: Readonly<HeroParallaxProps>) => {
+    const {products, subtitle, titleHero} = props
     const [isCarouselActive, setIsCarouselActive] = useState(false);
-    const firstRow = products.slice(0, 5);
-    const secondRow = products.slice(5, 10);
-    const thirdRow = products.slice(10, 15);
+    const firstRow = products.slice(0, 3);
+    const secondRow = products.slice(3, 6);
+    const thirdRow = products.slice(6, 10);
     const allProducts = products
     const ref = React.useRef(null);
     const { scrollYProgress } = useScroll({
@@ -82,12 +76,13 @@ export const HeroParallax = ({
         },
     };
 
+    
     return (
         <div
             ref={ref}
             className="z-0 flex flex-col [perspective:1000px] [transform-style:preserve-3d] overflow-hidden"
         >
-            <Header />
+            <Header titleHero={titleHero} subtitle={subtitle} />
             <motion.div
                 style={isCarouselActive ? {
                     rotateX,
@@ -148,14 +143,14 @@ export const HeroParallax = ({
     );
 };
 
-export const Header = () => {
+export const Header = ({titleHero, subtitle}: Partial<HeroParallaxProps>) => {
     return (
         <div className=" mx-auto py-20 md:py-40 px-4 w-full">
             <h2 className="text-2xl md:text-7xl font-bold dark:text-white">
-                Desenvolvimento <br /> Front-end
+                Desenvolvimento <br /> {titleHero}
             </h2>
             <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-                Clique em um dos cards para ver algum de meus projetos de front-end, onde demonstro minhas habilidades em React, Next, Angular, TypeScript, e outras tecnologias modernas.
+                {subtitle}
             </p>
         </div>
     );
