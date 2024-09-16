@@ -14,9 +14,9 @@ import { HeroParallaxProps } from "@/data/interfaces";
 export const HeroParallax = (props: Readonly<HeroParallaxProps>) => {
     const {products, subtitle, titleHero} = props
     const [isCarouselActive, setIsCarouselActive] = useState(false);
-    const firstRow = products.slice(0, 5);
-    const secondRow = products.slice(5, 10);
-    const thirdRow = products.slice(10, 15);
+    const firstRow = products.slice(0, 3);
+    const secondRow = products.slice(3, 6);
+    const thirdRow = products.slice(6, 10);
     const allProducts = products
     const ref = React.useRef(null);
     const { scrollYProgress } = useScroll({
