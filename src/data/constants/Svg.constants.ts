@@ -9,6 +9,7 @@ import {
   GulpIcon,
   HtmlIcon,
   JavascriptIcon,
+  JestIcon,
   MysqlIcon,
   NestjsIcon,
   NextjsIcon,
@@ -21,6 +22,8 @@ import {
   TailwindIcon,
   TypescriptIcon,
   UMLIcon,
+  ViteIcon,
+  VuejsIcon,
 } from "../../../public/svg";
 
 const svg: Svg[] = [
@@ -71,63 +74,78 @@ const svg: Svg[] = [
   },
   {
     id: "10",
+    path: `${JestIcon.src}`,
+    name: "Jest",
+  },
+  {
+    id: "11",
     path: `${MysqlIcon.src}`,
     name: "MySQL",
   },
   {
-    id: "11",
+    id: "12",
     path: `${NestjsIcon.src}`,
     name: "NestJS",
   },
   {
-    id: "12",
+    id: "13",
     path: `${NextjsIcon.src}`,
     name: "NextJS",
   },
   {
-    id: "13",
+    id: "14",
     path: `${NodejsIcon.src}`,
     name: "NodeJS",
   },
   {
-    id: "14",
+    id: "15",
     path: `${PostgresqlIcon.src}`,
     name: "PostgreSQL",
   },
   {
-    id: "15",
+    id: "16",
     path: `${PrismaIcon.src}`,
     name: "Prisma",
   },
   {
-    id: "16",
+    id: "17",
     path: `${ReactIcon.src}`,
     name: "ReactJS",
   },
   {
-    id: "17",
+    id: "18",
     path: `${SassIcon.src}`,
     name: "SASS",
   },
   {
-    id: "18",
+    id: "19",
     path: `${ScrumIcon.src}`,
     name: "Scrum",
   },
   {
-    id: "19",
+    id: "20",
     path: `${TailwindIcon.src}`,
     name: "TailwindCSS",
   },
   {
-    id: "20",
+    id: "21",
     path: `${TypescriptIcon.src}`,
     name: "TypeScript",
   },
   {
-    id: "21",
+    id: "22",
     path: `${UMLIcon.src}`,
     name: "UML",
+  },
+  {
+    id: "23",
+    path: `${ViteIcon.src}`,
+    name: "Vite",
+  },
+  {
+    id: "24",
+    path: `${VuejsIcon.src}`,
+    name: "VueJS",
   },
 ];
 export default svg;
