@@ -3,6 +3,45 @@ import { Projects } from "../interfaces";
 const projects: Projects[] = [
   {
     id: "1",
+    title: "Pokédex",
+    description:
+      "Uma aplicação web que simula uma Pokédex, permitindo aos usuários pesquisar, visualizar e filtrar informações sobre os Pokémon, utilizando a PokeAPI. A aplicação também oferece a funcionalidade de salvar Pokémons como favoritos.",
+    responsibility:
+      "Fui responsável por integrar a PokeAPI para listar os Pokémons, exibir os detalhes de cada um ao serem clicados, e permitir o salvamento de Pokémons como favoritos no local storage. Além disso, realizei testes unitários, de integração e testes e2e para garantir a qualidade de cada funcionalidade implementada.",
+    tools: "Vue 3, Vite, TypeScript, Bootstrap, Vitest, Cypress, Git, Gitflow",
+    results:
+      "Entreguei um software bem versionado, com documentação detalhada, testado e aprovado em mais de 10 cenários de teste. Aperfeiçoei minhas habilidades com Vue e realizei o deploy da aplicação na Vercel.",
+    images: [
+      {
+        id: "1",
+        src: "https://i.ibb.co/YLQsPXN/Captura-de-tela-2024-10-06-145214.png",
+        description: "Página inicial da Pokédex.",
+        title: "Página Inicial",
+      },
+      {
+        id: "2",
+        src: "https://i.ibb.co/rM6jZGv/Captura-de-tela-2024-10-06-145303.png",
+        description: "Listagem dos Pokémons filtrados por tipo selecionado.",
+        title: "Filtrar por Tipo",
+      },
+      {
+        id: "3",
+        src: "https://i.ibb.co/VJjps1g/Captura-de-tela-2024-10-06-145333.png",
+        description:
+          "Filtragem de Pokémons pelo nome à medida que o usuário digita as iniciais.",
+        title: "Filtrar por Nome",
+      },
+      {
+        id: "4",
+        src: "https://i.ibb.co/3pyPQs6/Captura-de-tela-2024-10-03-085334.png",
+        description: "Tela de listagem dos Pokémons favoritos salvos.",
+        title: "Pokémons Favoritos",
+      },
+    ],
+  },
+
+  {
+    id: "2",
     title: "Barba Brutal",
     description:
       "Barba Brutal é um sistema completo para uma barbearia com uma temática de rock clássico, onde os clientes podem realizar seus agendamentos de cortes de cabelo e barba. O projeto utiliza uma abordagem monorepo para integrar o frontend, backend e mobile, centralizando as regras de negócio em um core global utilizando a biblioteca TurboRepo.",
@@ -45,7 +84,7 @@ const projects: Projects[] = [
         id: "5",
         src: "https://i.ibb.co/FHD0sgZ/barbearia08.png",
         description:
-        "Após finalizar o agendamento, o usuário vem para essa tela de sucesso.",
+          "Após finalizar o agendamento, o usuário vem para essa tela de sucesso.",
         title: "Sucesso",
       },
       {
@@ -58,7 +97,7 @@ const projects: Projects[] = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     title: "E-Commerce",
     description:
       "O objetivo do projeto é listar produtos eletrônicos na página inicial, permitir que os usuários adicionem produtos ao carrinho e gerenciem suas quantidades diretamente na página de carrinho",
@@ -93,7 +132,7 @@ const projects: Projects[] = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     title: "Sistema de Agendamentos - AgendAR",
     description:
       "O AgendAR é um sistema que permite agendamentos em diversos tipos de estabelecimentos, oferecendo funcionalidades como gerenciamento de serviços, localização via Google Maps e visualização de dados estatísticos.",
@@ -134,7 +173,7 @@ const projects: Projects[] = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     title: "Gerenciador de Horários",
     description:
       "Esta aplicação visa facilitar o processo de gerenciamento de horários acadêmicos, trazendo uma interface simples e funcionalidades que auxiliam no combate a conflitos de horários.",
@@ -186,7 +225,7 @@ const projects: Projects[] = [
         title: "Turmas do Semestre",
       },
     ],
-  }
+  },
 ];
 
 export default projects;
