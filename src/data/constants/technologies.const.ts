@@ -1,5 +1,5 @@
-import { AngularIcon, AwsIcon, CssIcon, DjangoIcon, FigmaIcon, GitIcon, GoogleMapsIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MercadoPagoIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, OAuthIcon, PostgresqlIcon, PrismaIcon, ReactIcon, ResendIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "../../../public/svg";
-import {Technology} from "../models/interfaces/";
+import { AngularIcon, AwsIcon, CssIcon, DjangoIcon, FigmaIcon, GitIcon, GoogleMapsIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MercadoPagoIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, OAuthIcon, PostgresqlIcon, PrismaIcon, ReactIcon, ResendIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "@/assets/svg"
+import { Technology } from "../models/interfaces/";
 
 export const technologies: Technology[] = [
     { id: 1, name: "Angular", description: "Framework web moderno da Google para SPAs.", image: AngularIcon.src, highlighted: true },
@@ -31,5 +31,6 @@ export const technologies: Technology[] = [
     { id: 27, name: "Google Maps", description: "API para integração de mapas e geolocalização.", image: GoogleMapsIcon.src, highlighted: false },
     { id: 28, name: "OAuth", description: "Protocolo de autorização para acesso seguro a APIs.", image: OAuthIcon.src, highlighted: false },
     { id: 29, name: "Resend", description: "Serviço de envio de e-mails transacionais.", image: ResendIcon.src, highlighted: false },
+
 ];
 
