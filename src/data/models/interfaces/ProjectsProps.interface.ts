@@ -3,6 +3,7 @@ import { Technology } from "./TechnologiesProps.interface"
 export interface Project {
 	id: number
 	name: string
+	slug: string
 	description: string
 	images: string[]
 	level: Level

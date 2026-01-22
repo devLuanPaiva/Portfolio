@@ -6,6 +6,7 @@ export const projects: Project[] = [
 	{
 		id: 0,
 		name: "Gam3r Store",
+		slug: "gam3r-store",
 		description:
 			"Um e-commerce de tecnologia que oferece uma ampla variedade de produtos, desde gadgets e acessórios até equipamentos de alta performance para gamers. Ideal para quem busca inovação e qualidade",
 		images: [
@@ -43,6 +44,7 @@ export const projects: Project[] = [
 	{
 		id: 1,
 		name: "Convite Digital",
+		slug: "convite-digital",
 		description:
 			"O Convite Digital é uma plataforma desenvolvida para facilitar a gestão e envio de convites digitais. Ele permite a criação, personalização e distribuição de convites para eventos de forma rápida e eficiente.",
 		images: [
@@ -78,6 +80,7 @@ export const projects: Project[] = [
 	{
 		id: 2,
 		name: "Barba Brutal",
+		slug: "barba-brutal",
 		description:
 			"Aplicação para agendamento e gerenciamento de horários em uma barbearia. Desenvolvido com NestJS no backend e Next.js com TypeScript no frontend.",
 		images: [
@@ -113,6 +116,7 @@ export const projects: Project[] = [
 	{
 		id: 3,
 		name: "Trackllo",
+		slug: "trackllo",
 		description:
 			"Trackllo é um gerenciador de quadros Kanban moderno e intuitivo, criado para ajudar equipes a acompanhar o progresso de tarefas e manter todos sempre alinhados.",
 		images: [
@@ -149,6 +153,7 @@ export const projects: Project[] = [
 	{
 		id: 4,
 		name: "Space Quiz",
+		slug: "space-quiz",
 		description:
 			"Space Quiz é um aplicativo de perguntas e respostas sobre o espaço desenvolvido com React Native. O objetivo do aplicativo é testar seus conhecimentos sobre o cosmos com um quiz de 10 questões. No final, você verá a porcentagem de acertos para avaliar o seu desempenho.",
 		images: [
@@ -170,6 +175,7 @@ export const projects: Project[] = [
 	{
 		id: 5,
 		name: "Pokédex",
+		slug: "pokedex",
 		description:
 			"Pokédex é uma aplicação web que funciona como uma Pokédex, permitindo aos usuários pesquisar, visualizar e filtrar informações sobre os Pokémon. A aplicação utiliza a PokeAPI para obter dados sobre os Pokémon.",
 		images: [
@@ -196,6 +202,7 @@ export const projects: Project[] = [
 	{
 		id: 7,
 		name: "Travel Advisor",
+		slug: "travel-advisor",
 		description:
 			"Travel Advisor é um aplicativo de turismo que permite aos usuários pesquisar e encontrar informações sobre destinos turísticos, incluindo hotéis, restaurantes e atrações. O aplicativo utiliza a API do TripAdvisor para obter dados sobre os destinos.",
 		images: [
