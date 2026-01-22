@@ -4,7 +4,7 @@ import { Container } from "./Container"
 
 export function Header() {
 	return (
-		<header className="flex  items-center min-h-16  py-1 bg-gradient-to-b from-black to-transparent  z-50 relative w-full">
+		<header className="flex  items-center min-h-16  py-1 bg-linear-to-b from-black to-transparent  z-50 relative w-full">
 			<Container classStyle="flex items-center justify-between">
 				<div className="flex items-center gap-6">
 					<Logo />

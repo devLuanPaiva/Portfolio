@@ -19,7 +19,7 @@ export function ChatButton() {
 				side="top"
 				align="end"
 				sideOffset={5}
-				className="w-[80%] sm:w-[500px] h-[70%]"
+				className="w-[80%] sm:w-125 h-[70%]"
 				style={{ backgroundColor: "transparent", border: "none" }}
 			>
 				<ChatWindow />

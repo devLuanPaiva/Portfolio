@@ -8,7 +8,7 @@ export function MinCV() {
 			</figure>
 			<div className="flex flex-col gap-5 self-center py-6 items-center sm:items-start lg:items-center xl:items-start">
 				<div className="flex flex-col items-center sm:items-start lg:items-center xl:items-start">
-					<h2 className="bg-gradient-to-r text-center from-red-500 via-red-200 to-red-100 text-transparent bg-clip-text text-2xl font-bold">
+					<h2 className="bg-linear-to-r text-center from-red-500 via-red-200 to-red-100 text-transparent bg-clip-text text-2xl font-bold">
 						Luan Alves de Paiva
 					</h2>
 					<h4>Desenvolvedor Front-end</h4>

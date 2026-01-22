@@ -30,12 +30,12 @@ export function ChatWindow() {
 				/>
 			</header>
 			{messages.length === 0 ? (
-				<div className="flex flex-col justify-center items-center min-h-[70%] sm:min-h-[400px]">
+				<div className="flex flex-col justify-center items-center min-h-[70%] sm:min-h-100">
 					<IconMessages size={230} stroke={0.2} className="text-black/30" />
 					<span>Vamos conversar?</span>
 				</div>
 			) : (
-				<div className="flex flex-col p-2 gap-2 min-h-[70%] sm:min-h-[300px] max-h-[80%] sm:max-h-[400px] overflow-y-scroll">
+				<div className="flex flex-col p-2 gap-2 min-h-[70%] sm:min-h-100 max-h-[80%] sm:max-h-100 overflow-y-scroll">
 					{messages.map((message, i) => {
 						const sameAuthor =
 							i > 0 && messages[i - 1].author === message.author
