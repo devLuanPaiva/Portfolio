@@ -4,7 +4,7 @@ interface ContainerProps {
 }
 export function Container({ children, classStyle }: Readonly<ContainerProps>) {
     return (
-        <div className={`w-[90%] max-w-7xl mx-auto px-4 ${classStyle ?? ''}`}>
+        <div className={`w-11/12 max-w-7xl mx-auto ${classStyle ?? ''}`}>
             {children}
         </div>
     )
