@@ -1,16 +1,26 @@
 "use client"
 import { Readme } from "./Readme"
-import { useProjectId } from "@/data/hooks"
+import {  useProjects } from "@/data/hooks"
 import { useEffect, useState } from "react"
 import { ProjectFrame } from "./ProjectFrame"
 import { fetchReadme } from "@/data/functions"
 import { Container } from "../template/Container"
 import { ProjectImagesList } from "./ProjectImagesList"
 import { Technologies } from "../technologies/Technologies"
+import { IProject } from "@/data/models/interfaces"
 
-export function Project(props: Readonly<{ id: string }>) {
+
+export function Project({ slug}: Readonly<{ slug: string }>) {
 	const [readme, setReadme] = useState<string>("")
-	const { project } = useProjectId(props.id)
+	const [project, setProject] = useState<IProject | null>(null)
+	const { projects } = useProjects()
+
+	useEffect(() => {
+		const foundProject =
+			projects.find((project) => project.slug === slug) || null
+		setProject(foundProject)
+
+	}, [slug, projects])
 
 	useEffect(() => {
 		if (project?.repository) {
