@@ -2,6 +2,7 @@ import Image from "next/image"
 import { ChatWindow } from "./ChatWindow"
 import chatImage from "@/assets/chat.svg"
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover"
+
 export function ChatButton() {
 	return (
 		<Popover>

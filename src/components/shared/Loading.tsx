@@ -1,6 +1,9 @@
-import { MessageProps } from "@/data/models/interfaces"
+
 import { IconLoader } from "@tabler/icons-react"
 
+interface MessageProps {
+	message: string
+}
 export function Loading({ message }: Readonly<MessageProps>) {
 	return (
 		<div className="flex flex-col items-center justify-center min-h-screen">

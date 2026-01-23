@@ -15,10 +15,12 @@ export function ChatWindow() {
 		addMessage(text)
 		setText("")
 	}
+	
 	useEffect(
 		() => endChatRef.current?.scrollIntoView({ behavior: "smooth" }),
 		[messages]
 	)
+
 	return (
 		<aside className="flex flex-col bg-zinc-300 rounded-2xl text-black overflow-hidden">
 			<header className="flex justify-between items-center bg-white p-4">

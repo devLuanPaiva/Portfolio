@@ -4,14 +4,14 @@ import remarkGfm from 'remark-gfm'
 interface ContentMDProps {
     markdown: string
 }
-export function ContentMD(props: Readonly<ContentMDProps>) {
+export function ContentMD({ markdown }: Readonly<ContentMDProps>) {
     return (
         <Markdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}
             skipHtml={false}
         >
-            {props.markdown}
+            {markdown}
         </Markdown>
     )
 }

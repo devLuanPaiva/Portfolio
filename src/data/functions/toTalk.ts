@@ -1,7 +1,13 @@
 "use server";
-import { Message } from "../models/interfaces";
 
-export async function toTalk(chatId: string, message: Message): Promise<string | null> {
+import { IMessage } from "../models/interfaces";
+
+interface ToTalkProps {
+    chatId: string;
+    message: IMessage;
+}
+
+export async function toTalk({ chatId, message }: Readonly<ToTalkProps>): Promise<string | null> {
     const webhookUrl = process.env.CHAT_WEBHOOK;
     if (!webhookUrl) return null;
 

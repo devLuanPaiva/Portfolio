@@ -1,7 +1,12 @@
-import { TechnologiesProps } from "@/data/models/interfaces"
+
+import { ITechnology } from "@/data/models/interfaces";
 import { Technologies } from "../technologies/Technologies"
 
-export function Landing(props: Readonly<TechnologiesProps>) {
+interface LandingProps {
+	technologies: ITechnology[];
+}
+
+export function Landing({ technologies }: Readonly<LandingProps>) {
 	return (
 		<section className="bg-[url(/bg.jpg)] w-full bg-cover bg-center h-150 -mt-25 pt-25 z-0 flex flex-col  items-center justify-center gap-5 ">
 			<div className="flex flex-col items-center gap-1">
@@ -12,7 +17,7 @@ export function Landing(props: Readonly<TechnologiesProps>) {
 					Desenvolvedor Front-end
 				</h2>
 			</div>
-			<Technologies technologies={props.technologies} />
+			<Technologies technologies={technologies} />
 		</section>
 	)
 }

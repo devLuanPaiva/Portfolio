@@ -2,14 +2,19 @@
 import { cn } from "@/lib/utils"
 import { ProjectItem } from "./ProjectItem"
 import { useScrollerAnimation } from "@/data/hooks"
-import { ProjectsProps } from "@/data/models/interfaces"
+import { IProject } from "@/data/models/interfaces"
 
-export function ProjectsList(props: Readonly<ProjectsProps>) {
+interface ProjectsProps {
+	title: string
+	projects: IProject[]
+}
+
+export function ProjectsList({title, projects}: Readonly<ProjectsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()
 	return (
 		<section>
 			<h3 className="text-xl sm:text-2xl font-bold text-white/70">
-				{props.title}{" "}
+				{title}{" "}
 			</h3>
 			<div
 				ref={containerRef}
@@ -25,8 +30,8 @@ export function ProjectsList(props: Readonly<ProjectsProps>) {
 						"hover:paused"
 					)}
 				>
-					{props.projects.map((project, index) => (
-						<ProjectItem key={index} project={project} />
+					{projects.map((project, index) => (
+						<ProjectItem key={index + 1} project={project} />
 					))}
 				</ul>
 			</div>

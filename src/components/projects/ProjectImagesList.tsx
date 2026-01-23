@@ -6,6 +6,7 @@ import { useScrollerAnimation } from "@/data/hooks"
 interface ImageListsProps {
 	images: string[]
 }
+
 export function ProjectImagesList(props: Readonly<ImageListsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()
 	return (

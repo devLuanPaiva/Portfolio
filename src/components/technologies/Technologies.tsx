@@ -1,9 +1,14 @@
-import { TechnologiesProps } from "@/data/models/interfaces"
+
+import { ITechnology } from "@/data/models/interfaces"
 import Image from "next/image"
 
-export function Technologies(props: Readonly<TechnologiesProps>) {
-	if (!props.technologies || props.technologies.length === 0) return null
-	const sortedTechnologies = [...props.technologies].sort((a, b) =>
+export interface TechnologiesProps {
+	technologies: ITechnology[]
+	smallerSize?: boolean
+} 
+export function Technologies({ technologies, smallerSize }: Readonly<TechnologiesProps>) {
+	if (!technologies || technologies.length === 0) return null
+	const sortedTechnologies = [...technologies].sort((a, b) =>
 		a.name.localeCompare(b.name)
 	)
 
@@ -13,7 +18,7 @@ export function Technologies(props: Readonly<TechnologiesProps>) {
 				<li key={tech.id} className="flex flex-col items-center gap-1">
 					<figure
 						className={`relative h-8 w-8 ${
-							!props.smallerSize && "sm:h-12 sm:w-12 md:h-14 md:w-14"
+							!smallerSize && "sm:h-12 sm:w-12 md:h-14 md:w-14"
 						} rounded-md sm:rounded-xl overflow-hidden`}
 					>
 						<Image
