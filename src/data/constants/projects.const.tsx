@@ -1,8 +1,8 @@
 import { Level, Type } from "../models/enums"
-import { Project } from "../models/interfaces"
+import { IProject } from "../models/interfaces"
 import { technologies } from "./technologies.const"
 
-export const projects: Project[] = [
+export const projects: IProject[] = [
 	{
 		id: 0,
 		name: "Gam3r Store",

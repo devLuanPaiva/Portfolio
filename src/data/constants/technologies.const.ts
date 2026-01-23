@@ -1,7 +1,8 @@
 import { AirflowIcon, AngularIcon, AwsIcon, CssIcon, DjangoIcon, DockerIcon, FigmaIcon, GitIcon, GoogleMapsIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MercadoPagoIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, OAuthIcon, PostgresqlIcon, PrismaIcon, ReactIcon, ResendIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "@/assets/svg"
-import { Technology } from "../models/interfaces/";
+import { ITechnology } from "../models/interfaces";
 
-export const technologies: Technology[] = [
+
+export const technologies: ITechnology[] = [
     { id: 1, name: "Angular", description: "Framework web moderno da Google para SPAs.", image: AngularIcon.src, highlighted: true },
     { id: 2, name: "AWS", description: "Serviços de nuvem com ampla cobertura global.", image: AwsIcon.src, highlighted: false },
     { id: 3, name: "CSS3", description: "Linguagem de estilo para páginas web.", image: CssIcon.src, highlighted: false },
