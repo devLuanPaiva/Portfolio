@@ -2,6 +2,7 @@
 import { useMemo } from "react"
 import { Type } from "../models/enums"
 import { projects } from "../constants/projects.const"
+
 export function useProjects() {
 	const highlightedProjects = useMemo(
 		() => projects?.filter((project) => project.highlighted) || [],
@@ -24,9 +25,4 @@ export function useProjects() {
 		mobileProjects,
 	}
 }
-export function useProjectId(projectId: string) {
-	return {
-		project:
-			projects.find((project) => project.id === Number(projectId)) || null,
-	}
-}
+
