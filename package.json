@@ -26,7 +26,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "lucide-react": "^0.483.0",
     "motion-ui": "^2.0.8",
-    "next": "15.2.3",
+    "next": "^16.1.4",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-markdown": "^10.1.0",
