@@ -13,8 +13,8 @@ export function Experience() {
 	return (
 		<article className="flex flex-col sm:flex-row lg:flex-col items-center p-6 justify-around gap-2 bg-black border-zinc-500 shadow border-2 rounded-2xl">
 			<Item main="+30" label="projetos" />
-			<Item main="+300" label="pull requests" />
-			<Item main="+3.2k" label="commits" />
+			<Item main="+500" label="pull requests" />
+			<Item main="+6.2k" label="commits" />
 		</article>
 	)
 }

@@ -12,11 +12,11 @@ export function MinCV() {
 					<h2 className="bg-linear-to-r text-center from-red-500 via-red-200 to-red-100 text-transparent bg-clip-text text-2xl font-bold">
 						Luan Alves de Paiva
 					</h2>
-					<h4>Desenvolvedor Front-end</h4>
+					<h4>Desenvolvedor Full Stack</h4>
 				</div>
 				<p className="text-[10px] sm:text-xs md:text-sm text-center sm:text-left lg:text-center xl:text-left">
 					Sou um{" "}
-					<strong className="text-red-500">Desenvolvedor Front-end</strong> com
+					<strong className="text-red-500">Desenvolvedor Full Stack</strong> com
 					mais de{" "}
 					<strong className="text-red-500"> 4 anos de experiência</strong>{" "}
 					criando interfaces web e mobile de alto desempenho. Especialista em{" "}

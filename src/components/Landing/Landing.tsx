@@ -14,7 +14,7 @@ export function Landing({ technologies }: Readonly<LandingProps>) {
 					Luan Alves de Paiva
 				</h1>
 				<h2 className="text-zinc-500  sm:text-xl md:text-2xl text-center">
-					Desenvolvedor Front-end
+					Desenvolvedor Full Stack
 				</h2>
 			</div>
 			<Technologies technologies={technologies} />
