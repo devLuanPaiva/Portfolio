@@ -1,7 +1,8 @@
-import { AngularIcon, AwsIcon, CssIcon, DjangoIcon, FigmaIcon, GitIcon, GoogleMapsIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MercadoPagoIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, OAuthIcon, PostgresqlIcon, PrismaIcon, ReactIcon, ResendIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "../../../public/svg";
-import {Technology} from "../models/interfaces/";
+import { AirflowIcon, AngularIcon, AwsIcon, CssIcon, DjangoIcon, DockerIcon, FigmaIcon, GitIcon, GoogleMapsIcon, GulpIcon, HtmlIcon, JavascriptIcon, JestIcon, MercadoPagoIcon, MysqlIcon, NestjsIcon, NextjsIcon, NodejsIcon, OAuthIcon, PostgresqlIcon, PrismaIcon, ReactIcon, ResendIcon, SassIcon, ScrumIcon, TailwindIcon, TypescriptIcon, UMLIcon, VercelIcon, ViteIcon, VuejsIcon } from "@/assets/svg"
+import { ITechnology } from "../models/interfaces";
 
-export const technologies: Technology[] = [
+
+export const technologies: ITechnology[] = [
     { id: 1, name: "Angular", description: "Framework web moderno da Google para SPAs.", image: AngularIcon.src, highlighted: true },
     { id: 2, name: "AWS", description: "Serviços de nuvem com ampla cobertura global.", image: AwsIcon.src, highlighted: false },
     { id: 3, name: "CSS3", description: "Linguagem de estilo para páginas web.", image: CssIcon.src, highlighted: false },
@@ -31,5 +32,8 @@ export const technologies: Technology[] = [
     { id: 27, name: "Google Maps", description: "API para integração de mapas e geolocalização.", image: GoogleMapsIcon.src, highlighted: false },
     { id: 28, name: "OAuth", description: "Protocolo de autorização para acesso seguro a APIs.", image: OAuthIcon.src, highlighted: false },
     { id: 29, name: "Resend", description: "Serviço de envio de e-mails transacionais.", image: ResendIcon.src, highlighted: false },
+    { id: 30, name: "Docker", description: "Plataforma de containers para desenvolvimento e deploy.", image: DockerIcon.src, highlighted: false },
+    { id: 31, name: "Airflow", description: "Plataforma para criação, agendamento e monitoramento de workflows.", image: AirflowIcon.src, highlighted: false },
+
 ];
 

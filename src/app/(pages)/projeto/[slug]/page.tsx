@@ -4,12 +4,12 @@ import { Loading } from "@/components/shared"
 import { Suspense } from "react"
 
 export default async function PageProject(
-	props: Readonly<{ params: Promise<{ id: string }> }>
+	props: Readonly<{ params: Promise<{ slug: string }> }>
 ) {
-	const { id } = await props.params
+	const { slug } = await props.params
 	return (
 		<Suspense fallback={<Loading message="Carregando projeto..." />}>
-			<Project id={id} />
+			<Project slug={slug} />
 		</Suspense>
 	)
 }

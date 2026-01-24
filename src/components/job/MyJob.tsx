@@ -3,12 +3,12 @@ import Link from "next/link"
 export function MyJob() {
 	return (
 		<section className="px-6 py-10 bg-black text-white w-full  shadow-lg rounded-2xl">
-			<h2 className="text-3xl font-extrabold text-center bg-gradient-to-r from-red-600 via-white to-red-600 text-transparent bg-clip-text mb-10">
+			<h2 className="text-3xl font-extrabold text-center bg-linear-to-r from-red-600 via-white to-red-600 text-transparent bg-clip-text mb-10">
 				Experiências
 			</h2>
 
 			<div className="flex w-full flex-wrap gap-10 justify-center items-start">
-				<article className="bg-zinc-900 p-6 rounded-2xl border border-red-600 hover:shadow-red-700/40 hover:shadow-xl transition-shadow duration-300 w-full sm:max-w-[500px]">
+				<article className="bg-zinc-900 p-6 rounded-2xl border border-red-600 hover:shadow-red-700/40 hover:shadow-xl transition-shadow duration-300 w-full sm:max-w-125">
 					<h3 className="text-red-500 text-2xl font-semibold mb-2">
 						Desenvolvedor Front-end – Nosso Atacarejo
 					</h3>

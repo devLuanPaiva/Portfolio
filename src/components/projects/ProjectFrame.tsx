@@ -1,7 +1,7 @@
-export function ProjectFrame(props: Readonly<{ frame: React.ReactNode }>) {
+export function ProjectFrame({ frame }: Readonly<{ frame: React.ReactNode }>) {
 	return (
 		<section className="my-10 w-full flex items-center justify-center">
-			{props.frame}
+			{frame}
 		</section>
 	)
 }

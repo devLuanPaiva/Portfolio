@@ -1,14 +1,18 @@
 import { MinCV } from "./MinCV";
 import { Experience } from "./Experience";
 import { TechnologiesWorked } from "./TechnologiesWorked";
-import { TechnologiesProps } from "@/data/models/interfaces";
+import { ITechnology } from "@/data/models/interfaces";
 
-export function Curriculum(props: Readonly<TechnologiesProps>) {
+interface CurriculumProps {
+    technologies: ITechnology[];
+}
+
+export function Curriculum({ technologies }: Readonly<CurriculumProps>) {
     return (
         < section className="flex flex-col lg:flex-row gap-4 min-h-72 w-full">
             <MinCV />
             <Experience />
-            <TechnologiesWorked technologies={props.technologies} />
+            <TechnologiesWorked technologies={technologies} />
         </ section>
     )
 }

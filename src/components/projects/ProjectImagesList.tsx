@@ -6,6 +6,7 @@ import { useScrollerAnimation } from "@/data/hooks"
 interface ImageListsProps {
 	images: string[]
 }
+
 export function ProjectImagesList(props: Readonly<ImageListsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()
 	return (
@@ -13,7 +14,7 @@ export function ProjectImagesList(props: Readonly<ImageListsProps>) {
 			<div
 				ref={containerRef}
 				className={cn(
-					"mx-auto scroller box-border relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
+					"mx-auto scroller box-border relative z-20 max-w-7xl overflow-hidden mask-[linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
 				)}
 			>
 				<ul
@@ -21,12 +22,12 @@ export function ProjectImagesList(props: Readonly<ImageListsProps>) {
 					className={cn(
 						"flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4 box-border",
 						start && "animate-scroll",
-						"hover:[animation-play-state:paused]"
+						"hover:paused",
 					)}
 				>
-					{props?.images?.map((image) => (
+					{props?.images?.map((image, index) => (
 						<figure
-							key={image}
+							key={index + 1}
 							className="relative w-[70vw] box-border overflow-hidden rounded-2xl h-96"
 						>
 							<Image

@@ -2,19 +2,24 @@
 import { cn } from "@/lib/utils"
 import { ProjectItem } from "./ProjectItem"
 import { useScrollerAnimation } from "@/data/hooks"
-import { ProjectsProps } from "@/data/models/interfaces"
+import { IProject } from "@/data/models/interfaces"
 
-export function ProjectsList(props: Readonly<ProjectsProps>) {
+interface ProjectsProps {
+	title: string
+	projects: IProject[]
+}
+
+export function ProjectsList({title, projects}: Readonly<ProjectsProps>) {
 	const { containerRef, scrollerRef, start } = useScrollerAnimation()
 	return (
 		<section>
 			<h3 className="text-xl sm:text-2xl font-bold text-white/70">
-				{props.title}{" "}
+				{title}{" "}
 			</h3>
 			<div
 				ref={containerRef}
 				className={cn(
-					"scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
+					"scroller relative z-20 max-w-7xl overflow-hidden mask-[linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]"
 				)}
 			>
 				<ul
@@ -22,11 +27,11 @@ export function ProjectsList(props: Readonly<ProjectsProps>) {
 					className={cn(
 						"flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
 						start && "animate-scroll",
-						"hover:[animation-play-state:paused]"
+						"hover:paused"
 					)}
 				>
-					{props.projects.map((project, index) => (
-						<ProjectItem key={index} project={project} />
+					{projects.map((project, index) => (
+						<ProjectItem key={index + 1} project={project} />
 					))}
 				</ul>
 			</div>

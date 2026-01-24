@@ -1,4 +1,3 @@
-export * from "./TechnologiesProps.interface"
-export * from "./ProjectsProps.interface"
-export * from "./Message.interface"
-export * from "./MessageProps.interface"
+export * from "./ITechnology.interface"
+export * from "./IProjects.interface"
+export * from "./IMessage.interface"

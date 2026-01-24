@@ -1,5 +1,6 @@
 import perfil from "@/assets/perfil.png"
 import Image from "next/image"
+
 export function MinCV() {
 	return (
 		<article className="flex-1 flex flex-col-reverse sm:flex-row lg:flex-col-reverse xl:flex-row bg-black border-zinc-500 shadow border-2 rounded-2xl gap-5 px-6 pt-6">
@@ -8,14 +9,14 @@ export function MinCV() {
 			</figure>
 			<div className="flex flex-col gap-5 self-center py-6 items-center sm:items-start lg:items-center xl:items-start">
 				<div className="flex flex-col items-center sm:items-start lg:items-center xl:items-start">
-					<h2 className="bg-gradient-to-r text-center from-red-500 via-red-200 to-red-100 text-transparent bg-clip-text text-2xl font-bold">
+					<h2 className="bg-linear-to-r text-center from-red-500 via-red-200 to-red-100 text-transparent bg-clip-text text-2xl font-bold">
 						Luan Alves de Paiva
 					</h2>
-					<h4>Desenvolvedor Front-end</h4>
+					<h4>Desenvolvedor Full Stack</h4>
 				</div>
 				<p className="text-[10px] sm:text-xs md:text-sm text-center sm:text-left lg:text-center xl:text-left">
 					Sou um{" "}
-					<strong className="text-red-500">Desenvolvedor Front-end</strong> com
+					<strong className="text-red-500">Desenvolvedor Full Stack</strong> com
 					mais de{" "}
 					<strong className="text-red-500"> 4 anos de experiência</strong>{" "}
 					criando interfaces web e mobile de alto desempenho. Especialista em{" "}
