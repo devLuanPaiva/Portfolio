@@ -1,13 +1,13 @@
 "use client"
 import { Suspense } from "react"
-import { Loading } from "@/components/shared"
-import { MyJob } from "@/components/job/MyJob"
+import { MyJob } from "@/components/Landing/MyJob"
 import { Landing } from "@/components/Landing/Landing"
-import { Contacts } from "@/components/contacts/Contacts"
+import { Contacts } from "@/components/Landing/Contacts"
 import { Container } from "@/components/template/Container"
 import { useProjects, useTechnologies } from "@/data/hooks"
-import { Curriculum } from "@/components/document/Curriculum"
+import { Curriculum } from "@/components/Landing/document/Curriculum"
 import { ProjectsList } from "@/components/projects/ProjectsList"
+import Loading from "../loading"
 
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
 	const { highlightedProjects, mobileProjects, webProjects } = useProjects()
 
 	return (
-		<Suspense fallback={<Loading message="Carregando..." />}>
+		<Suspense fallback={<Loading />}>
 			<Landing technologies={highlightedTechnologies} />
 			<Container classStyle="py-20 flex flex-col gap-7 space-y-10">
 				<ProjectsList

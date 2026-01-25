@@ -1,6 +1,6 @@
 
 import { ITechnology } from "@/data/models/interfaces";
-import { Technologies } from "../technologies/Technologies"
+import { Technologies } from "../shared/Technologies"
 
 interface LandingProps {
 	technologies: ITechnology[];

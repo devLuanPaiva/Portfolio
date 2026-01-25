@@ -6,7 +6,7 @@ import { ProjectFrame } from "./ProjectFrame"
 import { fetchReadme } from "@/data/functions"
 import { Container } from "../template/Container"
 import { ProjectImagesList } from "./ProjectImagesList"
-import { Technologies } from "../technologies/Technologies"
+import { Technologies } from "../shared/Technologies"
 import { IProject } from "@/data/models/interfaces"
 
 
