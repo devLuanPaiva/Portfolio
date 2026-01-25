@@ -159,7 +159,7 @@ export function Contacts() {
 					<div className="flex justify-end">
 						<button
 							type="submit"
-							className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-lg transition-colors"
+							className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-[8px] cursor-pointer transition-colors"
 						>
 							Enviar
 						</button>
